@@ -1,0 +1,214 @@
+<!-- Wireframe Mockup (HTML/CSS + Beginner Content + Glossary + Video + Search + Form + Footer) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Short Private Equity</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background-color: #111;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .intro, .glossary, .video-embed, .signup-form, .footer-links {
+      background-color: #ffffff;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+    }
+    .card h3 {
+      font-size: 1.2rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .card p {
+      font-size: 0.95rem;
+      flex-grow: 1;
+    }
+    .card a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 0.5rem;
+      display: inline-block;
+    }
+    .category-tag {
+      font-size: 0.75rem;
+      background-color: #e0e0e0;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+      color: #444;
+    }
+    .search-bar {
+      display: flex;
+      margin-bottom: 2rem;
+      justify-content: center;
+    }
+    .search-bar input {
+      width: 60%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .glossary dt {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    .glossary dd {
+      margin-left: 1rem;
+    }
+    .signup-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .signup-form input[type="text"],
+    .signup-form input[type="email"] {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .signup-form button {
+      background-color: #000;
+      color: white;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .signup-form small {
+      font-size: 0.75rem;
+      color: #777;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      padding: 1rem;
+      background-color: #f1f1f1;
+      color: #444;
+    }
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-links li {
+      margin-bottom: 0.5rem;
+    }
+    .footer-links a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SHORT PRIVATE EQUITY</h1>
+  </header>
+  <div class="container">
+    <div class="search-bar">
+      <input type="text" placeholder="Search articles or terms...">
+    </div>
+
+    <section class="intro">
+      <h2>Welcome to Short Private Equity</h2>
+      <p>If you're new here, this site explores how private equity (PE) impacts everyday life — from hospitals to housing, grocery stores to education. PE firms often use debt to buy companies and cut costs to increase profits, but these actions can have serious consequences for workers, communities, and consumers. Our goal is to inform, explain, and expose the effects of unchecked private equity.</p>
+    </section>
+
+    <section class="video-embed">
+      <h3>Watch: The Big Short 2.0 – PE Explained</h3>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section class="signup-form">
+      <h3>Download Jared Dillian's Free White Paper</h3>
+      <form>
+        <input type="text" placeholder="First Name" required>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Download Now</button>
+        <small>🔒 Consent policy.</small>
+      </form>
+    </section>
+
+    <div class="card-grid">
+      <div class="card">
+        <span class="category-tag">Healthcare</span>
+        <h3>PE Firm Guts Hospitals, Lays Off 10,000</h3>
+        <p>Delaware County loses 4 hospitals as a PE-owned chain collapses, leaving communities without emergency care.</p>
+        <a href="#">Read More →</a>
+      </div>
+      <div class="card">
+        <span class="category-tag">Retail</span>
+        <h3>Family Dollar Sells to PE: $125K/Store</h3>
+        <p>Dollar Tree sells off stores to PE firm after mass closures. Experts warn of debt-fueled retail collapses.</p>
+        <a href="#">Read More →</a>
+      </div>
+      <div class="card">
+        <span class="category-tag">Policy</span>
+        <h3>Harvard Invests Billions in PE</h3>
+        <p>Harvard University explores a $1B stake in private equity. Critics question the ethics of investing in destructive firms.</p>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+
+    <section class="glossary">
+      <h3>Glossary: Private Equity Terms</h3>
+      <dl>
+        <dt>Private Equity (PE)</dt>
+        <dd>Firms that invest in businesses using investor money, often restructuring them to increase profits — sometimes with negative side effects.</dd>
+        <dt>Leveraged Buyout (LBO)</dt>
+        <dd>A purchase of a company using a significant amount of borrowed money, often putting debt on the company itself.</dd>
+        <dt>Exit Strategy</dt>
+        <dd>How a PE firm plans to sell a company it bought — usually via resale, IPO, or asset breakup.</dd>
+      </dl>
+    </section>
+
+    <section class="footer-links">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Archive</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Important Disclosures</a></li>
+      </ul>
+    </section>
+
+  </div>
+  <footer>
+    Copyright © 2025 Jared Dillian Money. All rights reserved
+  </footer>
+</body>
+</html>
