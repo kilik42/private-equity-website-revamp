@@ -213,7 +213,7 @@
 </body>
 </html> -->
 
-<!-- Full Redesign of Short Private Equity Site with All Articles Listed -->
+<!-- Full Redesign of Short Private Equity Site with All Articles Listed --><!-- Full Redesign of Short Private Equity Site with Categorized Articles -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -282,14 +282,20 @@
       font-size: 1rem;
       cursor: pointer;
     }
-    ul.article-list {
+    .category {
+      margin-bottom: 1.5rem;
+    }
+    .category h4 {
+      margin-bottom: 0.5rem;
+    }
+    .category ul {
       list-style-type: none;
-      padding: 0;
+      padding-left: 1rem;
     }
-    ul.article-list li {
-      margin-bottom: 0.75rem;
+    .category li {
+      margin-bottom: 0.5rem;
     }
-    ul.article-list a {
+    .category a {
       color: #2563eb;
       text-decoration: none;
       font-weight: 500;
@@ -346,27 +352,55 @@
     </section>
 
     <section class="section">
-      <h3>All Private Equity Articles</h3>
-      <ul class="article-list">
-        <li><a href="#">Hospitals Closed After PE Takeover</a></li>
-        <li><a href="#">Family Dollar’s PE Sell-Off</a></li>
-        <li><a href="#">University Endowments in PE</a></li>
-        <li><a href="#">Harvard Invests Billions in PE</a></li>
-        <li><a href="#">Walgreens Debt Write-Off Triggers PE Concerns</a></li>
-        <li><a href="#">Nursing Homes Collapse: PE Strategy in Question</a></li>
-        <li><a href="#">Retail Chains Restructured and Shut Down</a></li>
-        <li><a href="#">Credit Crunch Hits PE Funds Hard</a></li>
-        <li><a href="#">Tax Loopholes and PE Reform Debates</a></li>
-        <li><a href="#">Private Equity’s Role in Rent Inflation</a></li>
-        <li><a href="#">Civil War Trauma Centers Closed by PE Owners</a></li>
-        <li><a href="#">PE Firms and Veteran Clinics: Hidden Costs</a></li>
-        <li><a href="#">Tariff Wars & Tourism Investment Pullbacks</a></li>
-        <li><a href="#">Private Equity Bidding War: Kroger & Albertsons</a></li>
-        <li><a href="#">Dollar Tree PE Sale: $125K/Store</a></li>
-        <li><a href="#">Bain’s Advantage in Disappearing Markets</a></li>
-        <li><a href="#">China's Role in Global PE Strategy</a></li>
-        <li><a href="#">Hedge Funds Exit Failing PE-Backed Chains</a></li>
-      </ul>
+      <h3>Private Equity Articles by Topic</h3>
+
+      <div class="category">
+        <h4>🏥 Healthcare</h4>
+        <ul>
+          <li><a href="#">Hospitals Closed After PE Takeover</a></li>
+          <li><a href="#">Nursing Homes Collapse: PE Strategy in Question</a></li>
+          <li><a href="#">PE Firms and Veteran Clinics: Hidden Costs</a></li>
+          <li><a href="#">Civil War Trauma Centers Closed by PE Owners</a></li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <h4>🛍️ Retail</h4>
+        <ul>
+          <li><a href="#">Family Dollar’s PE Sell-Off</a></li>
+          <li><a href="#">Retail Chains Restructured and Shut Down</a></li>
+          <li><a href="#">Dollar Tree PE Sale: $125K/Store</a></li>
+          <li><a href="#">Hedge Funds Exit Failing PE-Backed Chains</a></li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <h4>🎓 Education</h4>
+        <ul>
+          <li><a href="#">University Endowments in PE</a></li>
+          <li><a href="#">Harvard Invests Billions in PE</a></li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <h4>💰 Finance & Strategy</h4>
+        <ul>
+          <li><a href="#">Credit Crunch Hits PE Funds Hard</a></li>
+          <li><a href="#">Tax Loopholes and PE Reform Debates</a></li>
+          <li><a href="#">Private Equity’s Role in Rent Inflation</a></li>
+          <li><a href="#">Bain’s Advantage in Disappearing Markets</a></li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <h4>🌍 Global Policy</h4>
+        <ul>
+          <li><a href="#">China's Role in Global PE Strategy</a></li>
+          <li><a href="#">Tariff Wars & Tourism Investment Pullbacks</a></li>
+          <li><a href="#">Private Equity Bidding War: Kroger & Albertsons</a></li>
+          <li><a href="#">Walgreens Debt Write-Off Triggers PE Concerns</a></li>
+        </ul>
+      </div>
     </section>
 
     <section class="section">
