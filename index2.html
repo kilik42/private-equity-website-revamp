@@ -1,0 +1,444 @@
+<!-- Redesigned Version of Short Private Equity Site with Contact Form
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Short Private Equity</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fafb;
+      color: #1f2937;
+    }
+    header {
+      background-color: #111827;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .section {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    h2, h3 {
+      color: #111827;
+      margin-bottom: 1rem;
+    }
+    .search-bar input {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    .card .category-tag {
+      background: #e5e7eb;
+      font-size: 0.75rem;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    .card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    .card p {
+      font-size: 0.9rem;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #2563eb;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    iframe {
+      width: 100%;
+      height: 320px;
+      border: none;
+      border-radius: 8px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+    }
+    form button {
+      background-color: #111827;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      padding: 1rem;
+      background-color: #f3f4f6;
+      color: #6b7280;
+    }
+    ul.links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul.links li {
+      margin-bottom: 0.5rem;
+    }
+    ul.links a {
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SHORT PRIVATE EQUITY</h1>
+  </header>
+  <main class="container">
+    <div class="section search-bar">
+      <input type="text" placeholder="Search articles, terms, or topics...">
+    </div>
+
+    <section class="section">
+      <h2>Welcome to Short Private Equity</h2>
+      <p>This site is dedicated to breaking down the influence of private equity on daily life — from shuttered hospitals to struggling retail chains. Whether you're a policymaker, investor, journalist, or simply curious, we aim to make this information clear and accessible.</p>
+    </section>
+
+    <section class="section">
+      <h3>Ex-Lehman Trader SOUNDS ALARM on Private Equity BUBBLE</h3>
+      <iframe src="https://www.youtube.com/embed/MIkR3zMhbAk" title="YouTube video player" allowfullscreen></iframe>
+    </section>
+
+    <section class="section">
+      <h3>Download Jared Dillian's Free White Paper</h3>
+      <form>
+        <input type="text" placeholder="First Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <button type="submit">Download Now</button>
+        <small>🔒 We respect your privacy.</small>
+      </form>
+    </section>
+
+    <section class="section">
+      <h3>Recent Highlights</h3>
+      <div class="card-grid">
+        <div class="card">
+          <span class="category-tag">Healthcare</span>
+          <h3>Hospitals Closed After PE Takeover</h3>
+          <p>PE-backed hospital network shuts down four locations, leaving communities stranded.</p>
+          <a href="#">Read More →</a>
+        </div>
+        <div class="card">
+          <span class="category-tag">Retail</span>
+          <h3>Family Dollar’s PE Sell-Off</h3>
+          <p>Family Dollar assets sold to private equity after widespread closures.</p>
+          <a href="#">Read More →</a>
+        </div>
+        <div class="card">
+          <span class="category-tag">Education</span>
+          <h3>University Endowments in PE</h3>
+          <p>Billions in higher ed funds are flowing into leveraged buyouts. Why it matters.</p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Glossary: Key Terms</h3>
+      <dl>
+        <dt><strong>Private Equity (PE)</strong></dt>
+        <dd>Investment funds that buy and restructure companies, often using large amounts of debt.</dd>
+        <dt><strong>Leveraged Buyout (LBO)</strong></dt>
+        <dd>The use of borrowed money to acquire a company, usually placing the debt burden on that company.</dd>
+        <dt><strong>Exit Strategy</strong></dt>
+        <dd>How a PE firm profits — typically through resale, IPO, or asset liquidation.</dd>
+      </dl>
+    </section>
+
+    <section class="section">
+      <h3>Contact Us</h3>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="section">
+      <h3>Explore</h3>
+      <ul class="links">
+        <li><a href="#">Archive</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Important Disclosures</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    Copyright © 2025 Jared Dillian Money. All rights reserved.
+  </footer>
+</body>
+</html> -->
+
+Full Redesign of Short Private Equity Site with All Articles Listed --><!-- Full Redesign of Short Private Equity Site with Categorized Articles -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Short Private Equity</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fafb;
+      color: #1f2937;
+    }
+    header {
+      background-color: #111827;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .section {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    h2, h3 {
+      color: #111827;
+      margin-bottom: 1rem;
+    }
+    .search-bar input {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+    iframe {
+      width: 100%;
+      height: 320px;
+      border: none;
+      border-radius: 8px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+    }
+    form button {
+      background-color: #111827;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .category {
+      margin-bottom: 1.5rem;
+    }
+    .category h4 {
+      margin-bottom: 0.5rem;
+    }
+    .category ul {
+      list-style-type: none;
+      padding-left: 1rem;
+    }
+    .category li {
+      margin-bottom: 0.5rem;
+    }
+    .category a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      padding: 1rem;
+      background-color: #f3f4f6;
+      color: #6b7280;
+    }
+    ul.links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul.links li {
+      margin-bottom: 0.5rem;
+    }
+    ul.links a {
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SHORT PRIVATE EQUITY</h1>
+  </header>
+  <main class="container">
+    <div class="section search-bar">
+      <input type="text" placeholder="Search articles, terms, or topics...">
+    </div>
+
+    <section class="section">
+      <h2>Welcome to Short Private Equity</h2>
+      <p>This site is dedicated to breaking down the influence of private equity on daily life — from shuttered hospitals to struggling retail chains. Whether you're a policymaker, investor, journalist, or simply curious, we aim to make this information clear and accessible.</p>
+    </section>
+
+    <section class="section">
+      <h3>Ex-Lehman Trader SOUNDS ALARM on Private Equity BUBBLE</h3>
+      <iframe src="https://www.youtube.com/embed/MIkR3zMhbAk" title="YouTube video player" allowfullscreen></iframe>
+    </section>
+
+    <section class="section">
+      <h3>Download Jared Dillian's Free White Paper</h3>
+      <form>
+        <input type="text" placeholder="First Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <button type="submit">Download Now</button>
+        <small>🔒 We respect your privacy.</small>
+      </form>
+    </section>
+
+    <section class="section">
+      <h3>Private Equity Articles by Topic</h3>
+
+      <div class="category">
+        <h4>🏥 Healthcare</h4>
+        <ul>
+          <li><a href="#">Hospitals Closed After PE Takeover</a></li>
+          <li><a href="#">Nursing Homes Collapse: PE Strategy in Question</a></li>
+          <li><a href="#">PE Firms and Veteran Clinics: Hidden Costs</a></li>
+          <li><a href="#">Civil War Trauma Centers Closed by PE Owners</a></li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <h4>🛍️ Retail</h4>
+        <ul>
+          <li><a href="#">Family Dollar’s PE Sell-Off</a></li>
+          <li><a href="#">Retail Chains Restructured and Shut Down</a></li>
+          <li><a href="#">Dollar Tree PE Sale: $125K/Store</a></li>
+          <li><a href="#">Hedge Funds Exit Failing PE-Backed Chains</a></li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <h4>🎓 Education</h4>
+        <ul>
+          <li><a href="#">University Endowments in PE</a></li>
+          <li><a href="#">Harvard Invests Billions in PE</a></li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <h4>💰 Finance & Strategy</h4>
+        <ul>
+          <li><a href="#">Credit Crunch Hits PE Funds Hard</a></li>
+          <li><a href="#">Tax Loopholes and PE Reform Debates</a></li>
+          <li><a href="#">Private Equity’s Role in Rent Inflation</a></li>
+          <li><a href="#">Bain’s Advantage in Disappearing Markets</a></li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <h4>🌍 Global Policy</h4>
+        <ul>
+          <li><a href="#">China's Role in Global PE Strategy</a></li>
+          <li><a href="#">Tariff Wars & Tourism Investment Pullbacks</a></li>
+          <li><a href="#">Private Equity Bidding War: Kroger & Albertsons</a></li>
+          <li><a href="#">Walgreens Debt Write-Off Triggers PE Concerns</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Glossary: Key Terms</h3>
+      <dl>
+        <dt><strong>Private Equity (PE)</strong></dt>
+        <dd>Investment funds that buy and restructure companies, often using large amounts of debt.</dd>
+        <dt><strong>Leveraged Buyout (LBO)</strong></dt>
+        <dd>The use of borrowed money to acquire a company, usually placing the debt burden on that company.</dd>
+        <dt><strong>Exit Strategy</strong></dt>
+        <dd>How a PE firm profits — typically through resale, IPO, or asset liquidation.</dd>
+      </dl>
+    </section>
+
+    <section class="section">
+      <h3>Contact Us</h3>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="section">
+      <h3>Explore</h3>
+      <ul class="links">
+        <li><a href="#">Archive</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Important Disclosures</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    Copyright © 2025 Jared Dillian Money. All rights reserved.
+  </footer>
+</body>
+</html>
+<!-- Full Redesign of Short Private Equity Site with 3-Column Category Cards -->
+Full Redesign of Short Private Equity Site with 3-Column Category Cards and Clear Bottom Padding
